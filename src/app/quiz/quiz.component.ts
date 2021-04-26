@@ -21,7 +21,7 @@ abc="0";
 localItem:string;
   constructor(private quizService:QuizService) {
     this.abc = "0";
-    //localStorage.setItem("abc",JSON.stringify(this.abc));
+    localStorage.setItem("abc",JSON.stringify(this.abc));
     this.localItem=localStorage.getItem("abc");
     if(this.localItem==null)
     {
